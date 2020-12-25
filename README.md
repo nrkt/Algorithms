@@ -1,2 +1,2 @@
-# Python-algorithms
+# Algorithms
 for competitive programming
