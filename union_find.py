@@ -12,9 +12,13 @@ def union(x,y):
     y = root(y)
     if rank[x] < rank[y]:
         par[x] = y
+        size[y] += size[x]
     else:
         par[y] = x
+        size[x] += size[y]
         if rank[x] == rank[y]:
             rank[x] += 1
 
-
+par = [i for i in range(n)]
+rank = [0] * n
+size = [1] * n
